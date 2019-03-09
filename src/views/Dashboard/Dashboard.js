@@ -33,7 +33,7 @@ class Dashboard extends Component {
     return (
       <tr key={key}>
         <td>{data.error}</td>
-        <td>{data.message}</td>
+        <td>{data.msg}</td>
         <td>{data.url}</td>
         <td>{data.line}</td>
         <td>{data.col}</td>
