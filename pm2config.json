@@ -1,5 +1,6 @@
 {
   "apps": [{
-    "script" : "serve -s build"
+    "name": "dashboard",
+    "script" : "npm run start"
   }]
 }
