@@ -2,6 +2,7 @@ import React from 'react';
 import { socketConnect } from 'socket.io-react';
 import logo from './logo.svg';
 import './App.css';
+import Table from './components/Table'
 
 class App extends React.Component {
   constructor(props){
@@ -35,10 +36,10 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <p>{this.state.data.map(el => {return <span key={el._id}>{el.message}, </span>})}</p>
-          <img src={logo} className="App-logo" alt="logo" />
-          <button onClick={this.sendMessage}>
+          <button onClick={this.sendMessage} className="btn btn-success">
             Send!
           </button>
+          <Table/>
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>

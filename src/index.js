@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import './index.css';
 import { SocketProvider } from 'socket.io-react';
 import io from 'socket.io-client';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+
 
 import * as serviceWorker from './serviceWorker';
 
