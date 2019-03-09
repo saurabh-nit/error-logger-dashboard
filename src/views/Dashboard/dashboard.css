@@ -1,0 +1,15 @@
+.table-heading {
+    /* min-width:  150px; */
+}
+.description {
+    min-width: 700px;
+}
+.table-sm-col {
+    min-width: 100px;
+}
+.table-md-col {
+    min-width:  250px;
+}
+.table-lg-col {
+    min-width:  400px;
+}

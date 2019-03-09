@@ -1,0 +1,31 @@
+.body {
+    padding: 10% 35%;
+}
+.form-input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+.header {
+    background: #333E5A;
+    /* height: 60px; */
+    text-align: left;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+/* .table-heading {
+  min-width: 120px;
+} */
+.error {
+    color: #FF0000;
+    font-size: 14px;
+    text-align: left;
+    padding: 0px 10px;
+}
+.signin-button {
+    /* text-align: right; */
+    margin-left: 230px;
+}

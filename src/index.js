@@ -9,19 +9,18 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 import * as serviceWorker from './serviceWorker';
 
-let connectOptions = {
-  // "force new connection" : true,
-  // "secure" : true,
-  "reconnection": true,
-  "reconnectionDelay": 1000,
-  "reconnectionDelayMax" : 2000,
-  "reconnectionAttempts": 99999,
-  "autoConnect" : true,
-  "timeout": 10000,
-  // "transports": ["websocket"],
-  // "query" : {user_id : user_id, accessToken : getAccessToken()}
-};
-
+// let connectOptions = {
+//   // "force new connection" : true,
+//   // "secure" : true,
+//   "reconnection": true,
+//   "reconnectionDelay": 1000,
+//   "reconnectionDelayMax" : 2000,
+//   "reconnectionAttempts": 99999,
+//   "autoConnect" : true,
+//   "timeout": 10000,
+//   // "transports": ["websocket"],
+//   // "query" : {user_id : user_id, accessToken : getAccessToken()}
+// };
 // const webSocketURL = "http://34.73.59.87"
 
 const socket = io.connect('http://34.73.59.87');
