@@ -20,7 +20,9 @@ let connectOptions = {
   // "query" : {user_id : user_id, accessToken : getAccessToken()}
 };
 
-const socket = io.connect('http://localhost:3000', connectOptions);
+// const webSocketURL = "http://34.73.59.87"
+
+const socket = io.connect('http://34.73.59.87');
 
 socket.on('message', msg => console.log(msg));
 
