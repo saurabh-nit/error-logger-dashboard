@@ -32,11 +32,11 @@ class Dashboard extends Component {
   errorRow = (data, key) => {
     return (
       <tr key={key}>
-        <td>{data.error}</td>
         <td>{data.msg}</td>
         <td>{data.url}</td>
         <td>{data.line}</td>
         <td>{data.col}</td>
+        <td>{data.error}</td>
       </tr>
     )
   };
@@ -51,11 +51,11 @@ class Dashboard extends Component {
           <table className="table table-responsive table-bordered">
             <thead>
             <tr>
-              <th className="table-lg-col">Error</th>
               <th className="table-lg-col">Error Message</th>
               <th className="table-md-col">url</th>
               <th className="table-sm-col">Line</th>
               <th className="table-sm-col">Col</th>
+              <th className="table-lg-col">Error</th>
             </tr>
             </thead>
             <tbody>
