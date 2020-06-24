@@ -87,15 +87,15 @@ class SignUp extends Component {
     this.setState({signInView});
   };
 
-  signIn = () => {debugger
+  signIn = () => {
     let loginParams = this.state.loginParams;
     let parameters = {
       email: loginParams.emailId,
       password: loginParams.passwordId
-    }
+    };
     signInUser(parameters).then((response) => {
       if(response.error === false) {
-        console.log(response.error)
+        console.log(response.error);
         localStorage.setItem('auth_token', response.data.auth_token);
         this.forceUpdate();
         // this.redirection();
