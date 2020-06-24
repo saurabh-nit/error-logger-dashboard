@@ -23,7 +23,7 @@ import * as serviceWorker from './serviceWorker';
 // };
 // const webSocketURL = "http://34.73.59.87"
 
-const socket = io.connect('http://localhost:3030');
+const socket = io.connect('https://error-logger-backend.herokuapp.com');
 
 socket.on('message', msg => console.log(msg));
 

@@ -37,6 +37,7 @@ class Dashboard extends Component {
         <td>{data.line}</td>
         <td>{data.col}</td>
         <td>{new Date(data.createdAt).toLocaleDateString()} at {new Date(data.createdAt).toLocaleTimeString()}</td>
+        <td>{data.userAgent}</td>
         <td>{data.error}</td>
       </tr>
     )
@@ -49,15 +50,16 @@ class Dashboard extends Component {
           Error Logger
         </div>
         <div className="dashboard-body">
-          <table className="table table-responsive table-bordered">
-            <thead>
+          <table className="table table-responsive table-bordered table-striped table-sm table-responsive-lg">
+            <thead className="thead-dark">
             <tr>
               <th className="table-lg-col">Error Message</th>
-              <th className="table-md-col">url</th>
+              <th className="table-md-col">Url</th>
               <th className="table-sm-col">Line</th>
               <th className="table-sm-col">Col</th>
               <th className="table-lg-col">Occured On</th>
-              <th className="table-lg-col">Error</th>
+              <th className="table-lg-col">User Agent</th>
+              <th className="table-lg-col">Specification</th>
             </tr>
             </thead>
             <tbody>
