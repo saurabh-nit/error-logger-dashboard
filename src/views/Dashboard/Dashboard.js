@@ -23,7 +23,7 @@ class Dashboard extends Component {
     if(this.props.socket){
       this.props.socket.on('dataFromServer', data=> {
         console.log('NOTIFICATION DATA:', data);
-        errorList.push(data);
+        errorList.unshift(data);
         this.setState({errorList});
       });
     }
@@ -36,6 +36,7 @@ class Dashboard extends Component {
         <td>{data.url}</td>
         <td>{data.line}</td>
         <td>{data.col}</td>
+        <td>{new Date(data.createdAt).toLocaleDateString()} at {new Date(data.createdAt).toLocaleTimeString()}</td>
         <td>{data.error}</td>
       </tr>
     )
@@ -55,6 +56,7 @@ class Dashboard extends Component {
               <th className="table-md-col">url</th>
               <th className="table-sm-col">Line</th>
               <th className="table-sm-col">Col</th>
+              <th className="table-lg-col">Occured On</th>
               <th className="table-lg-col">Error</th>
             </tr>
             </thead>

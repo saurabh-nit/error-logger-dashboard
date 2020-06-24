@@ -10,7 +10,7 @@ export const createUser = (parameters) => {
   }
   configParams.body =  JSON.stringify(parameters);
   const promise = new Promise((resolve, reject) => {
-    fetch('http://34.73.59.87/api/users/user-sign-up', configParams)
+    fetch('http://localhost:3030/users/user-sign-up', configParams)
       .then(response => response.json())
       .then((responseJson) => {
         resolve(responseJson);
@@ -33,7 +33,7 @@ export const signInUser = (parameters) => {
   }
   configParams.body =  JSON.stringify(parameters);
   const promise = new Promise((resolve, reject) => {
-    fetch('http://34.73.59.87/api/users/login-user', configParams)
+    fetch('http://localhost:3030/users/login-user', configParams)
       .then(response => response.json())
       .then((responseJson) => {
         resolve(responseJson);
@@ -56,7 +56,7 @@ export const getAllErrors = () => {
   }
   // configParams.body =  JSON.stringify(parameters);
   const promise = new Promise((resolve, reject) => {
-    fetch('http://34.73.59.87/api/users/get-all-errors', configParams)
+    fetch('http://localhost:3030/users/get-all-errors', configParams)
       .then(response => response.json())
       .then((responseJson) => {
         resolve(responseJson);
